@@ -1,14 +1,21 @@
-﻿/*StreamReader streamReader = new StreamReader(@"C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\'testfile.txt");*/
+﻿using GB;
 
-string path = @"testfile.txt";
-FileInfo dataFile= new FileInfo(path);
-foreach (var line in GB.FileInfoEx.EnumLines(dataFile))
+string pathOfDataFile = @"testfile.txt";
+string pathOfResultFile = @"resultfile.txt";
+
+FileInfo dataFile= new FileInfo(pathOfDataFile);
+
+FileStream file = new FileStream(pathOfResultFile, FileMode.Create);
+StreamWriter sw = new StreamWriter(file);
+
+
+foreach (string line in dataFile.EnumLines())
 {
-    string[] listOfData=line.Split('&');
-    for(int i = 0; i < listOfData.Length; i++)
-    {
-        listOfData[i] = listOfData[i].Trim(' ');
-    }  
+    string middleLine = line;
+    Operations.GetMail(ref middleLine);
+    
+    sw.WriteLine(middleLine);
 }
-/*List<string> list=ReadLine().Split("&").ToList();*/
+sw.Close();
+file.Close();
 Console.ReadKey();

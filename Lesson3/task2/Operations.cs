@@ -8,5 +8,14 @@ namespace task2
 {
     internal class Operations
     {
+         public static void GetReverse()
+        {
+            Console.Write("Введите строку: ");
+            string inputStr = Console.ReadLine();
+            char[] chars = inputStr.ToCharArray();
+            Array.Reverse(chars);
+            Console.WriteLine(chars);
+            Console.ReadKey(true);
+        }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB
 {
-    public class FileInfoEx
+    public static class FileInfoEx
     {
-        public static IEnumerable<string> EnumLines(FileInfo file)
+        public static IEnumerable<string> EnumLines(this FileInfo file)
         {
             using var reader = file.OpenText();
             while(!reader.EndOfStream)
