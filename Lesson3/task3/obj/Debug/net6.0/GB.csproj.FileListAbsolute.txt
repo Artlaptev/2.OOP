@@ -1,0 +1,16 @@
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.csproj.AssemblyReference.cache
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.AssemblyInfoInputs.cache
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.AssemblyInfo.cs
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.csproj.CoreCompileInputs.cache
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\GB.exe
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\GB.deps.json
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\GB.runtimeconfig.json
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\GB.dll
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\ref\GB.dll
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\GB.pdb
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.dll
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\ref\GB.dll
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.pdb
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\obj\Debug\net6.0\GB.genruntimeconfig.cache
+C:\Users\Laptev_AR\Desktop\Конкурс\GB\GB\bin\Debug\net6.0\testfile.txt
