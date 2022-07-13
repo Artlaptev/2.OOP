@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a509d8bc-431d-446f-a9ab-7846927edb5c": {
+      "ProjectGuid": "a509d8bc-431d-446f-a9ab-7846927edb5c",
+      "DisplayName": "BuildingLib",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
