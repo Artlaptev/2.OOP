@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuildingLibraryDLL
+namespace BuildingLibrary
 {
     public class Building
     {
@@ -20,7 +20,6 @@ namespace BuildingLibraryDLL
         
         public Building(int qtyFloor,int qtysection)
         {
-
             SetID();
             _qtyFloor= qtyFloor;
             _qtySection= qtysection;

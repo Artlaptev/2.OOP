@@ -11,4 +11,10 @@
     <ProjectReference Include="..\BuildingLibrary\BuildingLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="BuildingLibrary">
+      <HintPath>BuildingLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
