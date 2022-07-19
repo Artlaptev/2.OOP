@@ -27,9 +27,33 @@ namespace Task2
         {
             PropComplex = complexNumber;
         }
+        private Complex (int real,int img)
+        {
+            Real = real;
+            Imaginary = img;
+        }
         public override string ToString()
         {
             return $"{Real}+{Imaginary}i";
         }
+
+        public static Complex operator +(Complex c1, Complex c2)
+        {
+            return new Complex(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
+        }
+        public static Complex operator -(Complex c1, Complex c2)
+        {
+            return new Complex(c1.Real - c2.Real, c1.Imaginary - c2.Imaginary);
+        }
+
+        public static Complex operator *(Complex c1, Complex c2)
+        {
+            return new Complex((c1.Real * c2.Real- c1.Imaginary * c2.Imaginary), c1.Real * c2.Imaginary - c1.Imaginary * c2.Real);
+        }
+        public static Complex operator /(Complex c1, Complex c2)
+        {
+            return new Complex((c1.Real * c2.Real - c1.Imaginary * c2.Imaginary)/(c2.Imaginary*c2.Imaginary+c2.Real*c2.Real), (c1.Real * c2.Imaginary - c1.Imaginary * c2.Real)/ (c2.Imaginary * c2.Imaginary + c2.Real * c2.Real));
+        }
+
     }
 }
