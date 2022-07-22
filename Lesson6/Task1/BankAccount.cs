@@ -69,5 +69,24 @@ namespace Lesson2_bank
             to.Balance += amount;
         }
 
+        public static bool operator ==(BankAccount b1, BankAccount b2) => b1.ID == b2.ID;
+        public static bool operator !=(BankAccount b1, BankAccount b2) => !(b1 == b2);
+        public override bool Equals(object? obj)
+        {
+            if (obj != null)
+            {
+                var other = (BankAccount)obj;
+                return this.ID == other.ID;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ID);
+        }
+        public override string ToString()
+        {
+            return $"ID:{this.ID}, balance:{this.Balance}";
+        }
     }
 }

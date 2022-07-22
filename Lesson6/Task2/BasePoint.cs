@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Point
+    public class BasePoint
     {
+        public int X { get; internal set; }
+        public int Y { get; internal set; }
     }
 }

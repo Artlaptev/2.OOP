@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Point
+    public class Point:Figure
     {
+        public BasePoint BasePoint { get; protected set; }
+        public void MoveHorisontal(int inkrement)
+        {
+            BasePoint.X += inkrement;
+        }
+        public void MoveVertical(int inkrement)
+        {
+            BasePoint.X += inkrement;
+        }
     }
 }

@@ -11,16 +11,7 @@ namespace Task2
     {
         public Color Color { get; set; }
         public bool IsVisible { get; set; }
-        public BasePoint BasePoint { get; protected set; }
-        
-        public void MoveHorisontal(int inkrement)
-        {
-            BasePoint.X += inkrement;
-        }
-        public void MoveVertical(int inkrement)
-        {
-            BasePoint.X += inkrement;
-        }
+
         public static int GetValidSize(int size)
         {
             if (size > 0 && size is int) return size;
