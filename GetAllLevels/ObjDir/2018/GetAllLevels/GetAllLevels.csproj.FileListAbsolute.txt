@@ -1,0 +1,8 @@
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\GetAllLevels\bin\Debug\GetAllLevels.exe.config
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\GetAllLevels\bin\Debug\GetAllLevels.exe
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\GetAllLevels\bin\Debug\GetAllLevels.pdb
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\ObjDir\2018\GetAllLevels\GetAllLevels.csproj.AssemblyReference.cache
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\ObjDir\2018\GetAllLevels\GetAllLevels.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\ObjDir\2018\GetAllLevels\GetAllLevels.csproj.CoreCompileInputs.cache
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\ObjDir\2018\GetAllLevels\GetAllLevels.exe
+C:\Users\Laptev_AR\Desktop\Учебные проекты\test\2.OOP\GetAllLevels\ObjDir\2018\GetAllLevels\GetAllLevels.pdb
