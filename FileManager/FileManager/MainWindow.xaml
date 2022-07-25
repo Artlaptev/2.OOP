@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,20,410,20"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="410,20,20,20"/>
 
     </Grid>
 </Window>
