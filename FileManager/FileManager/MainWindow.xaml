@@ -5,10 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1300">
     <Grid>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,20,410,20"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="410,20,20,20"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="650*"/>
+            <ColumnDefinition Width="650*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lb_leftmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="lb_rightmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" Grid.Column="1"/>
+        <TextBox x:Name="tb_leftPath" HorizontalAlignment="Left" Margin="20,40,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20"/>
+        <Button x:Name="b_copyL" Content="Copy" HorizontalAlignment="Left" Margin="60,530,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button x:Name="b_pasteL" Content="Paste" HorizontalAlignment="Left" Margin="130,530,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button x:Name="b_moveL" Content="Move" Margin="200,530,390,0" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="b_deleteL" Content="Delete" Margin="271,530,319,0" VerticalAlignment="Top"/>
+        <Button x:Name="b_okL" Content="OK" HorizontalAlignment="Left" Margin="597,40,0,0" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="tb_rightPath" HorizontalAlignment="Left" Margin="20,40,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20" Grid.Column="1"/>
+        <Button x:Name="b_okR" Content="OK" HorizontalAlignment="Left" Margin="597,40,0,0" VerticalAlignment="Top" Width="33" Grid.Column="1"/>
+        <Button x:Name="b_createL" Content="Create" Margin="347,530,243,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
