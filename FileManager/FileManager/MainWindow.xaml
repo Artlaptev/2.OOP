@@ -11,8 +11,8 @@
             <ColumnDefinition Width="650*"/>
             <ColumnDefinition Width="650*"/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="lb_leftmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" SelectionChanged="ListBox_SelectionChanged"/>
-        <ListBox x:Name="lb_rightmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" Grid.Column="1"/>
+        <ListBox x:Name="lb_leftmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" Grid.Column="0" SelectionChanged="lb_leftmngr_SelectionChanged"/>
+        <ListBox x:Name="lb_rightmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,80,20,80" Grid.Column="1" SelectionChanged="lb_rightmngr_SelectionChanged"/>
         <TextBox x:Name="tb_leftPath" HorizontalAlignment="Left" Margin="20,40,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20"/>
         <Button x:Name="b_copyL" Content="Copy" HorizontalAlignment="Left" Margin="60,530,0,0" VerticalAlignment="Top" Width="60"/>
         <Button x:Name="b_pasteL" Content="Paste" HorizontalAlignment="Left" Margin="130,530,0,0" VerticalAlignment="Top" Width="60"/>

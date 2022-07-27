@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FileManager
+namespace addSubString
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,16 +23,6 @@ namespace FileManager
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void lb_leftmngr_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void lb_rightmngr_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
