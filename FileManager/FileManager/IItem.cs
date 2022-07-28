@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager.Factory
+namespace FileManager
 {
-    internal class WPF
+    internal interface Interface1
     {
     }
 }
