@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FileManager.Factory
 {
-    internal class Folder
+    internal class WPF
     {
     }
 }

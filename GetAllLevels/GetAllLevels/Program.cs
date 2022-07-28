@@ -4,6 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using TSM = Tekla.Structures.Model;
 using TSMUI = Tekla.Structures.Model.UI;
 
@@ -13,6 +14,7 @@ namespace GetAllLevels
     {
         static void Main(string[] args)
         {
+            Directory.EnumerateFileSystemEntries(@"C:\Users\Laptev_AR\Desktop\TSSupport").ToList();
             TSM.Model model = new TSM.Model();
             TSM.ModelObjectEnumerator enumer = new TSMUI.ModelObjectSelector().GetSelectedObjects();
             int level =0;
@@ -37,10 +39,8 @@ namespace GetAllLevels
             foreach (TSM.Assembly sub in array)
             {
                 GetAssemblyPosAndLevel(sub,ref level) ;
-            }
-
-            
+            }   
         }
-
+         
     }
 }
