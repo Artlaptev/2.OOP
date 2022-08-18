@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager.Factory
+namespace FileManager
 {
-    public class WPFlogic:FileManagerLogic
+    internal class FolderItem
     {
-        public static void GetItem()
-        {
-
-        }
     }
 }
