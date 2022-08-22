@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace FileManager
 {
-    internal class Item
+    public class Item
     {
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public string Size { get; set; }
     }
 }

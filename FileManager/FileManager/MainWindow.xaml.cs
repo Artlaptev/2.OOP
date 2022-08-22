@@ -27,12 +27,22 @@ namespace FileManager
 
         private void lb_leftmngr_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            tb_leftPath.Text = lb_leftmngr.SelectedItem.ToString();
         }
 
         private void lb_rightmngr_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+           List<string> list= Factory.UI.GetContent(tb_leftPath.Text);
+            foreach(string s in list)
+                lb_leftmngr.Items.Add(s);
+
+        }
+        
+        
     }
 }
