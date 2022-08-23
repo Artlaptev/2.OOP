@@ -19,8 +19,7 @@ namespace FileManager.Factory
             if(File.Exists(path))
                 item=new FileItem(path);
             else
-                item=new FolderItem(path);            
-
+                item=new FolderItem(path);
         }
         public static List<string> GetContent(string directoryString)
         {
@@ -29,13 +28,11 @@ namespace FileManager.Factory
             List<string> dirs = Directory.GetDirectories(directory.FullName).ToList();
             foreach (string contentDir in dirs)
             {
-                
                 content.Add(contentDir.Replace(directoryString, ""));
             }
             List<string> files = Directory.GetFiles(directory.FullName).ToList();
             foreach (string file in files)
             {
-                
                 content.Add(file.Replace(directoryString, ""));
             }
             return content;
