@@ -13,19 +13,22 @@
         </Grid.ColumnDefinitions>
         <ListBox x:Name="lb_leftmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,100,20,80" Grid.Column="0" SelectionChanged="lb_leftmngr_SelectionChanged"/>
         <ListBox x:Name="lb_rightmngr" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="20,100,20,80" Grid.Column="1" SelectionChanged="lb_rightmngr_SelectionChanged"/>
-        <TextBox x:Name="tb_leftPath" HorizontalAlignment="Left" Margin="20,22,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20"/>
+        <TextBox x:Name="tb_leftPath" HorizontalAlignment="Left" Margin="20,22,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20" TextChanged="tb_leftPath_TextChanged"/>
         <Button x:Name="b_copyL" Content="Copy" HorizontalAlignment="Left" Margin="60,530,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button x:Name="b_pasteL" Content="Paste" HorizontalAlignment="Left" Margin="130,530,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button x:Name="b_moveL" Content="Move" Margin="200,530,390,0" Height="20" VerticalAlignment="Top"/>
-        <Button x:Name="b_deleteL" Content="Delete" Margin="271,530,319,0" VerticalAlignment="Top"/>
-        <Button x:Name="b_okL" Content="OK" HorizontalAlignment="Left" Margin="597,22,0,0" VerticalAlignment="Top" Width="33"/>
+        <Button x:Name="b_moveL" Content="Move" Margin="140,530,451,0" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="b_deleteL" Content="Delete" Margin="220,530,370,0" VerticalAlignment="Top"/>
+        <Button x:Name="b_okL" Content="OK" HorizontalAlignment="Left" Margin="597,22,0,0" VerticalAlignment="Top" Width="33" Click="b_okL_Click"/>
         <TextBox x:Name="tb_rightPath" HorizontalAlignment="Left" Margin="20,22,0,0" TextWrapping="Wrap" Text="C:\" VerticalAlignment="Top" Width="564" Height="20" Grid.Column="1"/>
-        <Button x:Name="b_okR" Content="OK" HorizontalAlignment="Left" Margin="597,22,0,0" VerticalAlignment="Top" Width="33" Grid.Column="1"/>
-        <Button x:Name="b_createL" Content="Create" Margin="347,530,243,0" VerticalAlignment="Top"/>
+        <Button x:Name="b_okR" Content="OK" HorizontalAlignment="Left" Margin="597,22,0,0" VerticalAlignment="Top" Width="33" Grid.Column="1" Click="b_okR_Click"/>
+        <Button x:Name="b_createL" Content="Create" Margin="300,530,290,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="20,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="20"/>
         <Label x:Name="l_path" Content="Путь" HorizontalAlignment="Left" Margin="20,-4,0,0" VerticalAlignment="Top"/>
         <Label x:Name="l_find" Content="Найти" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.502,0.995"/>
         <Button x:Name="b_find" Content="Найти" HorizontalAlignment="Left" Margin="157,68,0,0" VerticalAlignment="Top" Width="42"/>
+        <Button x:Name="b_copyR" Content="Copy" HorizontalAlignment="Left" Margin="62,530,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1"/>
+        <Button x:Name="b_moveR" Content="Move" Margin="142,530,449,0" Height="20" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="b_deleteR" Content="Delete" Margin="222,530,368,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="b_createR" Content="Create" Margin="302,530,288,0" VerticalAlignment="Top" Grid.Column="1"/>
 
     </Grid>
 </Window>

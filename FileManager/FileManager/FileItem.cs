@@ -46,9 +46,9 @@ namespace FileManager
             _file.MoveTo(pathTo);
         }
 
-        public void Open(string selectedDirectoryName, out DirectoryInfo selectedDirectory)
+        public void Open(out string selectedDirectory)
         {
-            selectedDirectory = null;
+            selectedDirectory = string.Empty;
             var proc = new System.Diagnostics.Process();
             proc.StartInfo.FileName =_file.FullName;
             proc.StartInfo.UseShellExecute = true;

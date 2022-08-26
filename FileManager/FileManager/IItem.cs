@@ -14,7 +14,7 @@ namespace FileManager
         public void Rename(string newName);
         public void MoveTo(string pathTo);
         public void CopyTo(string pathTo);
-        public void Open( string selectedDirectoryName,out DirectoryInfo SelectedDirectory);
+        public void Open(out string SelectedDirectory);
         public Dictionary<string, string> GetInfo();
     }
 }

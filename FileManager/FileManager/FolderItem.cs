@@ -45,9 +45,9 @@ namespace FileManager
             _directory.MoveTo(pathTo);
         }
 
-        public void Open(string selectedDirectoryName, out DirectoryInfo selectedDirectory)
+        public void Open(out string selectedDirectory)
         {
-            selectedDirectory = new DirectoryInfo($"{_directory}/{selectedDirectoryName}");
+            selectedDirectory = _directory.FullName;
         }
 
 
